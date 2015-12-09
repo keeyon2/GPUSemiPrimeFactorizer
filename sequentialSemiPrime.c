@@ -38,7 +38,7 @@ void start(unsigned long semiPrime) {
     printf("Starting to calculate\n");
     int stop = 0;
     for (int i = 0; i < TOTAL_PRIMES; i++) {
-        for (int j = 1; j < TOTAL_PRIMES; j++) {
+        for (int j = 0; j < TOTAL_PRIMES; j++) {
             iValue = primes[i];
             jValue = primes[j];
             multipliedValue = iValue * jValue;
