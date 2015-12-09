@@ -30,6 +30,7 @@ void start(unsigned long semiPrime) {
     //unsigned long *primes;
     //primes = malloc(sizeof(unsigned long) * TOTAL_PRIMES);
     
+    printf("\n**************Starting GPU***************\n"); 
     // Initialize primes
     unsigned int primes[TOTAL_PRIMES];
     for (int i = 0; i < TOTAL_PRIMES; i++) {
@@ -72,14 +73,13 @@ void start(unsigned long semiPrime) {
     //transfer C_d from device to host
     cudaMemcpy(solution, d_solution, 2*sizeof(unsigned int), cudaMemcpyDeviceToHost);
 
-    printf("\n In host after kernal call \n");
     int totalPrimes = TOTAL_PRIMES;
     if (solution[0] == 0 && solution[1] == 0) {
-        printf("%lu is not a semiprime with factors less than %d\n", semiPrime, totalPrimes); 
+        printf("%lu is not a semiprime with factors less than %d\n\n", semiPrime, totalPrimes); 
     }
 
     else {
-        printf("The prime factors of %lu are %u and %u\n", semiPrime, solution[0], solution[1]);
+        printf("The prime factors of %lu are %u and %u\n\n", semiPrime, solution[0], solution[1]);
     }
 
     cudaFree(d_solution);
@@ -113,9 +113,6 @@ void factorSemiprime(unsigned int* d_primes, unsigned int* d_solution, unsigned 
     unsigned long value = (unsigned long)xValue * (unsigned long)yValue;
 
     if (value == semiPrime) {
-        printf("\n**********************************\n");
-    	printf("WE ARE IN CUDA BABY with correct value\n");
-	printf("X index: %d, Y index: %d, XValue: %u, yValue: %u, finalValue: %lu\n", xIndex, yIndex, xValue, yValue, value);
         d_solution[0] = xValue;
         d_solution[1] = yValue;
     }

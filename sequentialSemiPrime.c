@@ -28,17 +28,18 @@ void start(unsigned long semiPrime) {
     //unsigned long *primes;
     //primes = malloc(sizeof(unsigned long) * TOTAL_PRIMES);
     
+    printf("\n**************Starting Sequential***************\n"); 
     unsigned long primes[TOTAL_PRIMES];
     createPrimesArray(&primes[0]);
-    printf("Finished Extracting Primes\n");
 
     unsigned long iValue; 
     unsigned long jValue;
     unsigned long multipliedValue;
-    printf("Starting to calculate\n");
     int stop = 0;
-    for (int i = 0; i < TOTAL_PRIMES; i++) {
-        for (int j = 0; j < TOTAL_PRIMES; j++) {
+    int i;
+    int j;
+    for (i = 0; i < TOTAL_PRIMES; i++) {
+        for (j = 0; j < TOTAL_PRIMES; j++) {
             iValue = primes[i];
             jValue = primes[j];
             multipliedValue = iValue * jValue;
@@ -57,12 +58,12 @@ void start(unsigned long semiPrime) {
     // This being hit indicates the semiprime
     // was successfully factored
     if (stop) {
-        printf("We have found the factors of %lu\n", semiPrime);
-        printf("The factors are:\n %lu and %lu\n", iValue, jValue);
+        printf("The prime factors of %lu are %lu and %lu\n\n", semiPrime, 
+                iValue, jValue);
     }
-
     else {
-        printf("No factors were found to %lu\n", semiPrime);
+        int totalPrimes = TOTAL_PRIMES;
+        printf("%lu is not a semiprime with factors less than %d\n\n", semiPrime, totalPrimes); 
     }
 }
 
@@ -70,7 +71,8 @@ void createPrimesArray(unsigned long *array) {
     FILE *inputFile;
     unsigned long mostRecentNumber;
     inputFile = fopen("primes1.txt", "r");
-    for (int i = 0; i < TOTAL_PRIMES; i++) {
+    int i;
+    for (i = 0; i < TOTAL_PRIMES; i++) {
         fscanf(inputFile, "%lu", &mostRecentNumber);
         array[i] = mostRecentNumber;
     }
