@@ -1,0 +1,192 @@
+
+**************Starting Sequential***************
+The prime factors of 6 are 2 and 3
+
+
+real	0m0.141s
+user	0m0.132s
+sys	0m0.006s
+
+**************Starting GPU***************
+The prime factors of 6 are 2 and 3
+
+
+real	0m37.124s
+user	0m26.188s
+sys	0m10.842s
+
+**************Starting Sequential***************
+The prime factors of 1689303271703 are 1299721 and 1299743
+
+
+real	4m26.601s
+user	4m26.846s
+sys	0m0.009s
+
+**************Starting GPU***************
+The prime factors of 1689303271703 are 1299721 and 1299743
+
+
+real	0m37.123s
+user	0m26.474s
+sys	0m10.557s
+
+**************Starting Sequential***************
+The prime factors of 7563413027531 are 2750161 and 2750171
+
+
+real	8m52.962s
+user	8m53.459s
+sys	0m0.009s
+
+**************Starting GPU***************
+The prime factors of 7563413027531 are 2750161 and 2750171
+
+
+real	0m37.185s
+user	0m26.074s
+sys	0m10.999s
+
+**************Starting Sequential***************
+The prime factors of 18115689599993 are 4256249 and 4256257
+
+
+real	13m19.006s
+user	13m19.742s
+sys	0m0.023s
+
+**************Starting GPU***************
+The prime factors of 18115689599993 are 4256249 and 4256257
+
+
+real	0m37.179s
+user	0m26.332s
+sys	0m10.560s
+
+**************Starting Sequential***************
+The prime factors of 33641728422101 are 5800139 and 5800159
+
+
+real	17m45.228s
+user	17m46.247s
+sys	0m0.011s
+
+**************Starting GPU***************
+The prime factors of 33641728422101 are 5800139 and 5800159
+
+
+real	0m37.161s
+user	0m25.806s
+sys	0m11.186s
+
+**************Starting Sequential***************
+The prime factors of 54299228177501 are 7368791 and 7368811
+
+
+real	22m11.765s
+user	22m13.036s
+sys	0m0.012s
+
+**************Starting GPU***************
+The prime factors of 54299228177501 are 7368791 and 7368811
+
+
+real	0m37.174s
+user	0m25.802s
+sys	0m11.278s
+
+**************Starting Sequential***************
+The prime factors of 80290058462759 are 8960467 and 8960477
+
+
+real	26m37.811s
+user	26m39.336s
+sys	0m0.016s
+
+**************Starting GPU***************
+The prime factors of 80290058462759 are 8960467 and 8960477
+
+
+real	0m37.177s
+user	0m26.100s
+sys	0m10.990s
+
+**************Starting Sequential***************
+The prime factors of 111743081139479 are 10570849 and 10570871
+
+
+real	31m4.302s
+user	31m6.073s
+sys	0m0.020s
+
+**************Starting GPU***************
+The prime factors of 111743081139479 are 10570849 and 10570871
+
+
+real	0m37.177s
+user	0m26.132s
+sys	0m10.958s
+
+**************Starting Sequential***************
+The prime factors of 148724512810747 are 12195263 and 12195269
+
+
+real	35m30.356s
+user	35m32.391s
+sys	0m0.020s
+
+**************Starting GPU***************
+The prime factors of 148724512810747 are 12195263 and 12195269
+
+
+real	0m37.170s
+user	0m25.849s
+sys	0m11.229s
+
+**************Starting Sequential***************
+The prime factors of 191383152856891 are 13834127 and 13834133
+
+
+real	39m56.734s
+user	39m58.883s
+sys	0m0.016s
+
+**************Starting GPU***************
+The prime factors of 191383152856891 are 13834127 and 13834133
+
+
+real	0m37.169s
+user	0m26.062s
+sys	0m11.020s
+
+**************Starting Sequential***************
+The prime factors of 239811859939591 are 15485857 and 15485863
+
+
+real	44m22.879s
+user	44m25.441s
+sys	0m0.010s
+
+**************Starting GPU***************
+The prime factors of 239811859939591 are 15485857 and 15485863
+
+
+real	0m37.172s
+user	0m26.124s
+sys	0m10.961s
+
+**************Starting Sequential***************
+12 is not a semiprime with factors less than 1000000
+
+
+real	44m23.167s
+user	44m25.708s
+sys	0m0.030s
+
+**************Starting GPU***************
+12 is not a semiprime with factors less than 1000000
+
+
+real	0m37.156s
+user	0m26.036s
+sys	0m11.036s
